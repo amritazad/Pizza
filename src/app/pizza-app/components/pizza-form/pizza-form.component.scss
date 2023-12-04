@@ -19,9 +19,7 @@
 .input {
   margin: 0 30px 20px 0;
   flex-grow: 1;
-  &:last-child {
-    margin-right: 0;
-  }
+  
   label {
     font-size: 12px;
     font-weight: 700;

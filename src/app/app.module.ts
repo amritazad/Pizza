@@ -6,10 +6,13 @@ import { AppComponent } from './app.component';
 import { PizzaAppModule } from './pizza-app/pizza-app.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { OrderStatusComponent } from './pizza-app/components/order-status/order-status.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OrderStatusComponent
+
   ],
   imports: [
     BrowserModule,

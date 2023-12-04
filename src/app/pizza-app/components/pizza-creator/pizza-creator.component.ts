@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
+import { Component, Input, Output, EventEmitter, ChangeDetectionStrategy, OnChanges, SimpleChanges } from '@angular/core';
 import { FormArray } from '@angular/forms';
 
 @Component({
@@ -60,7 +60,10 @@ import { FormArray } from '@angular/forms';
     </div>
   `
 })
-export class PizzaCreatorComponent {
+export class PizzaCreatorComponent implements OnChanges {
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log(this.pizzas);
+  }
 
   private visiblePizza: number = 0;
 
